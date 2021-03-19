@@ -2,6 +2,10 @@
 
 1. Flexbox & Grid
 
+* _A Complete Guide to Flexbox:_ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+* _A Complete Guide to Grid:_ https://css-tricks.com/snippets/css/complete-guide-grid/
+
 ***
 
 2. Node.js
