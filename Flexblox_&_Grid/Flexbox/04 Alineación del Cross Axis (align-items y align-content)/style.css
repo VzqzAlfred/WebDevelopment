@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #333;
+    height: 30vh;
+
+    display: flex;          /* or inline-flex */
+    /* Define que una caja será flexbox de bloque o flexbox de línea. */
+
+    /* flex-direction: row*/
+    /* Define el eje principal (main axis) row-x, column-y */
+    /* row | row-reverse | column | column-reverse */
+
+    /* flex-wrap: wrap */
+    /* Define si la caja flexbox envuelve o NO a sus hijos */
+    /* nowrap | wrap | wrap-reverse */
+
+    flex-flow: column wrap;
+    /* Es un shorthand de flex-direction y flex-wrap */
+
+    justify-content: flex-start; 
+    /* Define la alineación de los hijos en el eje principal (main axis) */
+    /* flex-start | center | flex-end | space-between | space-around | space-evenly */
+
+    
+    align-items: stretch;
+    /* Define la alineación de los hijos en el eje transversal (cross axis), dentro de cada línea. */
+    /* strech | flex-start | flex-end | center | baseline */
+
+    align-content: stretch;
+    /* Define la alineación de los hijos en el eje transversal (cross axis), NO funciona cuando los hijos están en UNA sola línea (cuando 'flex-wrap: nowrap', la propiedad NO FUNCIONA). */
+}
+
+.item{
+    border: medium solid #999;
+    
+    /*height: 20% */
+    background-color: #666;
+}
+
+/*.item:nth-child(2),
+.item:nth-child(17){
+    font-size: 250%;
+}*/
