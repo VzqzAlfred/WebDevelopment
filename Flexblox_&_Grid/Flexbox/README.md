@@ -51,9 +51,9 @@
 
 3. ***flex-basis: auto;***
 > Es el tamaño del elemento hijo dentro de la línea de la caja flexbox. 
-    Si la caja flexbox tiene dirección de fila, flex-basis representa el width. 
-    Si la caja flexbox tiene dirección de columna, flex-basis representa el height.
+* Si la caja flexbox tiene dirección de fila, flex-basis representa el width. 
+* Si la caja flexbox tiene dirección de columna, flex-basis representa el height.
 
 
-4. *** flex: 0 1 auto;***
-> Es un shorthand de las propiedades: *** flex-grow flex-shrink flex basis ***, en ese orden.
+4. ***flex: 0 1 auto;***
+> Es un shorthand de las propiedades: ***flex-grow flex-shrink flex basis***, en ese orden.
