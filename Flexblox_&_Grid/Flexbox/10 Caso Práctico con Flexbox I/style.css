@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.titulares{
+    background-color: #222;
+    color: #DDD;
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu ul{
+        display: flex;
+    }
+
+    .menu li {
+        padding: 0.5rem;
+    }
+}
+
+
+
+
+
+.hero-image{
+    min-height: 100vh;
+    background-image: url("https://placeimg.com/1280/720/any");
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #DDD;
+    background-repeat: no-repeat;
+}
+
+.hero-image div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hero-image h1{
+    font-size: 5vw;
+}
