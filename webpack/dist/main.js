@@ -1,0 +1,1 @@
+(()=>{var o;console.log("Bienvenido a Webpack sin configuración.  :D"),(o=console).log.apply(o,[10,20,30])})();

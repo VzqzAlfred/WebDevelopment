@@ -1,0 +1,24 @@
+{
+  "name": "course-webpack",
+  "version": "1.0.0",
+  "description": "Codigo del curso de Webpack de @AlfredVzqz",
+  "main": "src/index.js",
+  "scripts": {
+    "dev-foo": "webpack --mode development --entry ./foo/src/index.js --output-path ./foo/dist",
+    "build-foo": "webpack --mode production --entry ./foo/src/index.js --output-path ./foo/dist",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Alfredo Vazquez <alfred.vzqz96@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
