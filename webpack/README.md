@@ -1,3 +1,5 @@
 # Introducción a WEBPACK 
 
-* Teoria: https://jonmircha.com/webpack 
+* Teoria-explicación: https://jonmircha.com/webpack
+
+* Documentación Webpack: https://webpack.js.org/
