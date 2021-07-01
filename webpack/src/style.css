@@ -10,8 +10,8 @@ html{
     font-family: "Chalet",sans-serif;
     font-size: 16px;
     background-color: #2b3a42;
-    color: #8dd6f9;
-    background-image: url("./assets/batman-1.jpg");
+    color: #30475E;
+    background-image: url("./assets/batman-2.jpg");
     background-size: cover;
 }
 
@@ -25,7 +25,12 @@ body{
 }
 
 a{
-    color: #FFF;
+    color: #222831;
+}
+
+a:hover{
+    color: #145374;
+    transition: all 0.5s;
 }
 
 img{
@@ -34,7 +39,7 @@ img{
 }
 
 .icon{
-    max-width: 4rem;
+    max-width: 8rem;
 }
 
 .menu{
