@@ -18,4 +18,6 @@
 
 4. Webpack
 
-***
+* _Webpack theory:_ https://jonmircha.com/webpack
+
+* _Webpack Documentation:_ https://webpack.js.org/
