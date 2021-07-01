@@ -1,4 +1,4 @@
-# Introducción a WEBPACK 
+# WEBPACK 
 
 * Teoria-explicación: https://jonmircha.com/webpack
 
