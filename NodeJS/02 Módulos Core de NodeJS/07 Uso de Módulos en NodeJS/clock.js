@@ -5,10 +5,12 @@ const Clock = (() => {
     inherits = require("util").inherits;
 
   var Clock = function () {
-    let self = this;
+    // let self = this;
 
     setInterval(() => {
-      self.emit("tictac");
+      // self.emit("tictac");
+      
+      this.emit("tictac");
     }, 1000);
   };
 
