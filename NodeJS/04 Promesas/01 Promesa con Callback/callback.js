@@ -6,12 +6,12 @@ let fs  = require('fs'),
 
 fs.access(file, fs.F_OK, (err) => {
     if (err) {
-        console.log("El archivo no existe");
+        console.log("El archivo no existe.");
     }else{
-        console.log("El archivo existe");
+        console.log("El archivo existe.");
         fs.readFile(file, (err, data) => {
             if (err) {
-                console.log('El archivo no se pudo leer');
+                console.log('El archivo no se pudo leer.');
             }else{
                 console.log("El archivo se ha leído exitosamente.");
                 fs.writeFile(newFile, data, err => {
