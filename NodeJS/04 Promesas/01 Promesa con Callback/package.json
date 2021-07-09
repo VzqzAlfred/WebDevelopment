@@ -1,0 +1,16 @@
+{
+  "name": "promises-callback",
+  "version": "0.0.1",
+  "description": "Implementacion de callbacks en NodeJS",
+  "main": "callback.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "callbacks",
+    "promises",
+    "q"
+  ],
+  "author": "AlfredVzqzS",
+  "license": "MIT"
+}
