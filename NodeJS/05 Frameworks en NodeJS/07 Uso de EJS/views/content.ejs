@@ -1,0 +1,31 @@
+<article id="ejs" class="container">
+    <h1>
+        <a href="<%=link%>" target="_blank"><%=title%></a>
+    </h1> 
+    
+    <p><%=description%></p>
+</article>
+<br>
+<div id="logo-node"></div>
+<br>
+<button id="press" class="boton">Press on me</button>
+<script>
+    const $button = document.querySelector("#press");
+
+    $button.addEventListener('click', e => {
+        alert("Presionado :O")
+    });
+</script>
+<article class="container">
+    <h2>Mexico's Seasons</h2>
+    <% for(let i=0; i < seasons.length; i++){ %>
+        <div class="item">
+            <h3><%=seasons[i][0] %></h3>
+            <ul>
+                <% for(let j=0; j < seasons[i][1].length; j++){ %>
+                    <li><%=seasons[i][1][j]%></li>
+                <% } %>
+            </ul>
+        </div>
+    <% } %>
+</article>
