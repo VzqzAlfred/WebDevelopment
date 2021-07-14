@@ -1,0 +1,26 @@
+{
+  "name": "templates-pug",
+  "version": "0.0.1",
+  "description": "Motores de plantillas en Pug y EJS en Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "templates",
+    "engines",
+    "NodeJS"
+  ],
+  "author": "@AlfredVzqzS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
+  }
+}
