@@ -41,7 +41,9 @@
 - `$in / $nin`: _en / no en array de valores._
 
 Ejemplo: 
-> `micol.findOne({valor: {$in:[5,15]} }, cb)`
+```javascript
+    micol.findOne({valor: {$in:[5,15]} }, cb)`
+```
 
 
 ### Operadores Lógicos
@@ -109,7 +111,9 @@ _El operador más sencillo para modificar:_ `save`
 * Si el documento ya existe, lo modifica.
 
 Ejemplo:
-> `db.micol.save({nombre: "Usuario Prueba"})`
+```javascript 
+    db.micol.save({nombre: "Usuario Prueba"})
+```
 
 
 ### Eliminación 
@@ -117,7 +121,9 @@ Ejemplo:
 * Elimina los documentos que satisfaga la búsqueda.
 
 Ejemplo:
-> `db.micol.remove({nombre: "Usuario Prueba."})`
+```javascript
+    db.micol.remove({nombre: "Usuario Prueba."})
+```
 
 
 <hr>
