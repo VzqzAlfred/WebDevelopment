@@ -1,5 +1,6 @@
 Mongo es lazy, flojo puede crearse al momento de ser requerido.
 
+
 * `sudo mongod`: Ejecutamos el Demonio (servicio) de MongoDB.
 * `mongo`: Ejecutamos el Cliente de la Terminal de Comandos.
 * `show dbs`: Mostramos las Bases de Datos.
