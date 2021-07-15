@@ -51,6 +51,7 @@ Ejemplo:
 - `$not`: _No se cumple todas las cláusulas._
 
 Ejemplo:
+```javascript
     micol.finOne({
         $or:[
             {valor: 5},
@@ -59,6 +60,7 @@ Ejemplo:
             }
         ]
     }, callback)
+```
 
 
 ### Consultas
@@ -78,12 +80,14 @@ Ejemplo:
     - `[["campo", 1], ["otroCampo", -1]]`
     - _1 para ascendente, -1 para descendente._
 
-Ejemplo: 
+Ejemplo:
+```javascript
     coleccion.find()
         .sort([['a', -1]])
         .nextObject((err, item) => {
             // ...
         })
+```
 
 
 ### Inserción
@@ -91,10 +95,12 @@ Ejemplo:
 * _Inserta uno o varios documentos en la colección._
 
 Ejemplo:
+```javascript
     db.micol.insert([
         {nombre: "Usuario Prueba"},
         {nombre: "Usuario Prueba 2"}
     ])
+```
 
 
 ### Modificación
@@ -103,7 +109,7 @@ _El operador más sencillo para modificar:_ `save`
 * Si el documento ya existe, lo modifica.
 
 Ejemplo:
-    db.micol.save({nombre: "Usuario Prueba"})
+> `db.micol.save({nombre: "Usuario Prueba"})`
 
 
 ### Eliminación 
@@ -111,7 +117,7 @@ Ejemplo:
 * Elimina los documentos que satisfaga la búsqueda.
 
 Ejemplo:
-    db.micol.remove({nombre: "Usuario Prueba."})
+> `db.micol.remove({nombre: "Usuario Prueba."})`
 
 
 <hr>
