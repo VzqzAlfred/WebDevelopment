@@ -1,0 +1,29 @@
+{
+  "name": "api-rest-mongodb",
+  "version": "0.0.1",
+  "description": "API REST con MongoDB, Express & NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "API",
+    "CRUD",
+    "REST",
+    "MVC",
+    "MongoDB"
+  ],
+  "author": "@AlfredVzqzS",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-method-override": "^0.0.3",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "responsimple": "^1.0.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
