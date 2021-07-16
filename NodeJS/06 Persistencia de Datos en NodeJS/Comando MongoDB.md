@@ -10,3 +10,9 @@ Mongo es lazy, flojo puede crearse al momento de ser requerido.
 * `db.collection`: Para saber en que colección te encuentras.
 * `db.collection.find().explain()`
 * `db.collection.count()`
+
+
+
+## Para ejecutar la aplicación en una consola ejecutar:
+> `sudo systemctl status mongod`
+> `npm start`
