@@ -30,7 +30,7 @@ io.on('connection', socket => {
     conexions++;
     console.log(`Conexiones activas: ${conexions}`);
 
-    // socket.emit('connectUsers', {numbers: conexions});
+    socket.emit('connectUsers', {numbers: conexions});
     socket.broadcast.emit('connectUsers', {numbers: conexions});
 
     socket.on('disconnect', () => {
