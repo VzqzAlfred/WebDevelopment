@@ -1,0 +1,20 @@
+{
+  "name": "simple-chat",
+  "version": "0.0.1",
+  "description": "Chat simple con Sockect.IO y Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Chat",
+    "Express",
+    "Socket.IO"
+  ],
+  "author": "@AlfredVzqzS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3"
+  }
+}
