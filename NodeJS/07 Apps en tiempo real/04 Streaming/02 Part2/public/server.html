@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor de Streaming</title>
+</head>
+<body>
+    <h1>Servidor de Streaming</h1>
+    <p>Esta página transmite en tiempo real el streaming de la cámara web.</p>
+    <video id="video"></video>
+    <canvas id="canvas" width="1280" height="720"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        (function(d, w, n, io){
+            const socket = io(),
+            startCamera = false,
+            video = d.querySelector('#video'),
+            canvas = d.querySelector('#canvas'),
+            context = canvas.getContext('2d');
+        
+            /*navigator.streaming = (
+                navigator.getUserMedia || 
+                navigator.webkitGetUserMedia ||
+                navigator.mozGetUserMedia ||
+                navigator.msGetUserMedia
+            );*/
+
+            /*navigator.streaming({
+                video: true,
+                audio: false
+            }, stream => {
+                startCamera = true;
+                video.src = window.URL.createObjectURL(stream);
+            }, err => {
+                alert('Error al acceder a la cámara web: ', err)
+            });*/
+
+            n.mediaDevices
+            .getUserMedia({video: true, audio: false})
+            .then(stream => {
+                console.log(stream);
+                video.srcObject = stream;
+                //video.play();
+            })
+            .catch(err => { 
+                video.insertAdjacentHTML("beforebegin", `<p><mark>Sucedio el siguiente error: ${err}</mark></p>`);
+                console.log(`Sucedio el siguiente error: ${err}`)
+            });
+
+
+            w.playVideo = (callback => {
+                return w.requestAnimationFrame ||
+                    w.webkitRequestAnimationFrame ||
+                    w.mozRequestAnimationFrame ||
+                    w.msRequestAnimationFrame ||
+                    function(cb){
+                        w.setTimeout(cb, 1000/100)
+                    }
+            })();
+
+            const streamVideo = (context, canvas, video) => {
+                let outPutStream = canvas.toDataURL('image/jpeg', .2);
+                context.drawImage(video, 0, 0);
+
+                if(video.play() === true){
+                    io.emit('streaming', outPutStream);
+                }
+                
+                playVideo( () => {
+                    streamVideo(context, canvas, video);
+                });
+            }
+
+            w.addEventListener("DOMContentLoaded", e => {
+                video.play();
+                video.style.display = 'none';
+                streamVideo(context, canvas, video)
+            });
+
+        })(document, window, navigator, io);
+    </script>
+</body>
+</html>
