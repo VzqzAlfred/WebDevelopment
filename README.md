@@ -10,11 +10,13 @@
 
 2. Node.js
 
-* _Documentation NodeJS_: https://nodejs.org/en/docs/
+* _NodeJS Documentation_: https://nodejs.org/en/docs/
 
 ***
 
 3. React 
+
+_React Documentation:_ https://reactjs.org/docs/getting-started.html
 
 ***
 
