@@ -1,5 +1,5 @@
 {
-  "name": "01-hooks",
+  "name": "01-usestate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
