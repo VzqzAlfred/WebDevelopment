@@ -1,0 +1,34 @@
+{
+  "justiceleague": [
+    {
+      "id": 1,
+      "name": "Superman",
+      "author": "Jerry Siegel"
+    },
+    {
+      "id": 2,
+      "name": "Batman",
+      "author": "Bob Kane"
+    },
+    {
+      "id": 3,
+      "name": "Mujer Maravilla",
+      "author": "William Moulton"
+    },
+    {
+      "id": 4,
+      "name": "Flash",
+      "author": "Gardner Fox"
+    },
+    {
+      "name": "Aquaman",
+      "author": "Mort Weisinger",
+      "id": 5
+    },
+    {
+      "name": "Cyborg",
+      "author": "Marv Wolfman",
+      "id": 6
+    }
+  ]
+} 
