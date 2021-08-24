@@ -17,15 +17,30 @@ export const ConceptsBasics = () => {
     <div>
          <h2>HashRouter</h2>
          <HashRouter>
-              <nav>
-                   <Link to="/">Home</Link>
-                   <Link to="/acerca">Acerca</Link>
-                   <Link to="/contacto">Contacto</Link>
-              </nav>
+              <MenuConcepts />
               <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/acerca" component={Acerca}/>
                     <Route exact path="/contacto" component={Contacto} />
+                    
+                    <Route exact path="/user/:username" component={User} />
+
+                    <Route exact path="/productos" component={Productos} />
+
+                    <Route exact path="/about">
+                         <Redirect to="/acerca" />
+                    </Route>
+                    
+                    <Route exact path="/contact">
+                         <Redirect to="/contacto" />
+                    </Route>
+
+                    <Route path="/react" component={ReactTopics} />
+          
+                    <Route exact path="/login" component={Login} />
+                    {/* <Route exact path="/dashboard" component={Dashboard} /> */}
+                    <PrivateRoute exact path="/dashboard" component={Dashboard} />
+
                     {/* Por jerarquía va al final */}
                     <Route path="*" component={Error404} />
               </Switch>
@@ -56,6 +71,7 @@ export const ConceptsBasics = () => {
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
 
         </Switch>
+      
       </Router>
     </div>
   );
