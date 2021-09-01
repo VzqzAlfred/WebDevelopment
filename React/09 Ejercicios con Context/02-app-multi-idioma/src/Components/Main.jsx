@@ -3,7 +3,6 @@ import ThemeContext from "../Context/ThemeContext";
 import LanguageContext from "../Context/LanguageContext";
 
 const Main = ({auth}) => {
-
      const {theme} = useContext(ThemeContext);
      const {texts} = useContext(LanguageContext);
 

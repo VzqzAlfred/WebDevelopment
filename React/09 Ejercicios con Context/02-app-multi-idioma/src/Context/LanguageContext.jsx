@@ -36,16 +36,16 @@ const LanguageProvider = ({children}) => {
      const [texts, setTexts] = useState(translations[language]);
 
           const handleLanguage = e => {
-          if (e.target.value === "es") {
-               setLanguage("es");
-               setTexts(translations.es);
-          }else {
-               setLanguage("en");
-               setTexts(translations.en);
-          }
-     };
+               if (e.target.value === "es") {
+                    setLanguage("es");
+                    setTexts(translations.es);
+               }else {
+                    setLanguage("en");
+                    setTexts(translations.en);
+               }
+          };
 
-     const data = { texts, handleLanguage};
+     const data = { texts, handleLanguage };
 
      return (
           <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>

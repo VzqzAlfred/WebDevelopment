@@ -11,8 +11,6 @@ const initialAuth = null;
 const MyPage = () => {
      const [auth, SetAuth] = useState(initialAuth);
 
-     // console.log(texts);
-
      const handleAuth = e => {
           // console.log(e.target.textContent);
 
@@ -26,16 +24,16 @@ const MyPage = () => {
 
      return (
           <div className="my-page">
-               <LanguageProvider>
                <ThemeProvider> 
-                         <Header
-                              auth={auth} 
-                              handleAuth={handleAuth} 
+                    <LanguageProvider>
+                              <Header
+                                   auth={auth} 
+                                   handleAuth={handleAuth} 
                               />
-                         <Main auth={auth} />
-                         <Footer />
+                              <Main auth={auth} />
+                              <Footer />
+                    </LanguageProvider>
                </ThemeProvider>
-                         </LanguageProvider>
           </div>
      )
 }
