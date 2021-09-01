@@ -10,16 +10,16 @@ const MyPage = () => {
      return (
           <div className="my-page">
                <LogInProvider>
-                    <LanguageProvider>
-                         <ThemeProvider> 
+                    <ThemeProvider> 
+                         <LanguageProvider>
                               <Header />
                               <Main />
                               <Footer />
-                         </ThemeProvider>
-                    </LanguageProvider>
+                         </LanguageProvider>
+                    </ThemeProvider>
                </LogInProvider>
           </div>
-     )
+     );
 }
 
 export default MyPage

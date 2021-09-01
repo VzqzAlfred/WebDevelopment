@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import ThemeContext from "../Context/ThemeContext";
 import LanguageContext from "../Context/LanguageContext";
-import LogInContext from "../Context/LanguageContext";
+import LogInContext from "../Context/LogInContext";
 
 const Header = () => {
      const {theme, handleTheme} = useContext(ThemeContext);
@@ -23,11 +23,7 @@ const Header = () => {
                <label htmlFor="dark">{texts.headerDark}</label>
 
                <button onClick={handleAuth}>
-                    {
-                         auth
-                              ? texts.buttonLogout
-                              : texts.buttonLogin
-                    }
+                    {auth ? texts.buttonLogout : texts.buttonLogin}
                </button>
           </header>
      )

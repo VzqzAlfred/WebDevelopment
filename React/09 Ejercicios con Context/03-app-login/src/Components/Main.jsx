@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import ThemeContext from "../Context/ThemeContext";
 import LanguageContext from "../Context/LanguageContext";
-import LogInContext from "../Context/LanguageContext";
+import LogInContext from "../Context/LogInContext";
 
 const Main = () => {
 
