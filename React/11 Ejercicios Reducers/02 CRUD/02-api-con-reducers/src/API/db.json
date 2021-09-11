@@ -1,0 +1,59 @@
+{
+  "justiceleague": [
+    {
+      "id": 1,
+      "name": "Superman",
+      "author": "Jerry Siegel"
+    },
+    {
+      "id": 2,
+      "name": "Batman",
+      "author": "Bob Kane"
+    },
+    {
+      "id": 3,
+      "name": "Mujer Maravilla",
+      "author": "William Moulton"
+    },
+    {
+      "id": 4,
+      "name": "Flash",
+      "author": "Gardner Fox"
+    },
+    {
+      "name": "Aquaman",
+      "author": "Mort Weisinger",
+      "id": 5
+    },
+    {
+      "name": "Cyborg",
+      "author": "Marv Wolfman",
+      "id": 6
+    },
+    {
+      "name": "Atom",
+      "author": "Gardner Fox",
+      "id": 1629144398064
+    },
+    {
+      "name": "Arrow",
+      "author": "Mort Weisinger",
+      "id": 1629145524361
+    },
+    {
+      "name": "Roy Harper",
+      "author": "Alex Ross",
+      "id": 1629146916456
+    },
+    {
+      "name": "Black lightning",
+      "author": "Tony Isabella",
+      "id": 1631389207898
+    },
+    {
+      "name": "Black Canary",
+      "author": "Robert Kanigher",
+      "id": 1631389248975
+    }
+  ]
+}
