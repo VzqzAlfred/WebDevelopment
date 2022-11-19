@@ -1,9 +1,10 @@
 # Resources
 
-1. https://learncssgrid.com/
+1. [Learn CSS GRID](https://learncssgrid.com/)
 
 ## Grid interactive
-* https://codepen.io/collection/DgwjNL/
-* https://griddy.io/
-* https://codepen.io/anthonydugois/pen/RpYBmy
-* Grid garden: http://cssgridgarden.com/
+
+- [GRID Layout to practice](https://codepen.io/collection/DgwjNL/)
+- [Griddy to lear columns in Grid](https://griddy.io/)
+- [To biuld rows in GRID](https://codepen.io/anthonydugois/pen/RpYBmy)
+- [Grid garden game](http://cssgridgarden.com/)
