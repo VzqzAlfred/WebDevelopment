@@ -2,7 +2,7 @@
 
 Flujo de manejo de **Reduxs**
 
-![Flujo de Redux](https://www.google.com/imgres?imgurl=https://d33wubrfki0l68.cloudfront.net/08d01ed85246d3ece01963408572f3f6dfb49d41/4bc12/assets/images/reduxasyncdataflowdiagram-d97ff38a0f4da0f327163170ccc13e80.gif&imgrefurl=https://platzi.com/clases/1613-redux/20653-explicacion-teorica-ciclo-completo-de-redux/&tbnid=ZhOxgS2UFT7uOM&vet=1&docid=8zvnrSQmAqczFM&w=1440&h=1080&source=sh/x/im)
+![Flujo de Redux](https://camo.githubusercontent.com/5aba89b6daab934631adffc1f301d17bb273268b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3336343831322f696d616765732f323438343535322f415243482d5265647578322d7265616c2e676966)
 
 1. **Store**: Contiene el _state_, (uno por aplicación).
 1. **Dispatch**: Ejecuta una acción que actualizará el _state_.
